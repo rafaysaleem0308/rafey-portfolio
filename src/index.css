@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 250 250 255;
+    --surface: 241 245 249;
+    --border: 226 232 240;
+    --text: 15 23 42;
+    --muted: 100 116 139;
+    --accent: 124 58 237;
+  }
+
+  .dark {
+    --bg: 2 6 23;
+    --surface: 15 23 42;
+    --border: 30 41 59;
+    --text: 248 250 252;
+    --muted: 148 163 184;
+    --accent: 139 92 246;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-violet-500/30 text-violet-200;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-violet-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-violet-500;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-slate-100;
+  }
+
+  .section-subtitle {
+    @apply text-slate-400 mt-3 text-lg;
+  }
+
+  .card {
+    @apply bg-slate-800/50 border border-slate-700/50 rounded-2xl backdrop-blur-sm;
+  }
+
+  .card-hover {
+    @apply hover:border-violet-500/50 hover:bg-slate-800/80 transition-all duration-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-500 text-white font-semibold rounded-xl transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold rounded-xl border border-slate-700 hover:border-slate-500 transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .glow-sm {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+  }
+
+  .glow-md {
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.2);
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .noise {
+    position: relative;
+  }
+
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.5;
+    border-radius: inherit;
+  }
+}
