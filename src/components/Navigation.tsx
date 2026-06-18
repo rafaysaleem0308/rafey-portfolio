@@ -56,11 +56,11 @@ export default function Navigation({ theme, toggleTheme }: Props) {
           {/* Logo */}
           <motion.button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-lg font-bold gradient-text"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            RS
+            <img src="/logo.png" alt="Rafey Saleem" className="h-9 w-auto object-contain" />
           </motion.button>
 
           {/* Desktop links */}
