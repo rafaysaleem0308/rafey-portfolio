@@ -212,14 +212,14 @@ function ProjectCard({ project, index, inView }: { project: (typeof projects)[0]
 
         {/* Links */}
         <div className="flex items-center gap-3 pt-3 border-t border-slate-700/30">
-      <a
+<a
   href={project.githubUrl}
   target="_blank"
   rel="noopener noreferrer"
-  className="flex items-center gap-1.5 text-xs text-white transition-colors"
+  className="flex items-center gap-2 text-sm font-bold text-white transition-colors"
 >
-  <Github size={20} />
-  Go to Github Repo
+  <Github size={20} className="text-white" />
+  <span className="text-white">Go to GitHub Repo</span>
 </a>
           {project.liveUrl && (
             <a
