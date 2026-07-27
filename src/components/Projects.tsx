@@ -218,8 +218,8 @@ function ProjectCard({ project, index, inView }: { project: (typeof projects)[0]
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-100 transition-colors"
           >
-            <Github size={14} />
-            Code
+            <Github size={20} />
+            Go to Github Repo
           </a>
           {project.liveUrl && (
             <a
