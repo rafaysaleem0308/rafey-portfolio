@@ -6,7 +6,7 @@ export const personal = {
   roles: ['Full-Stack Developer', 'MERN Developer', 'Flutter Developer', 'Software Engineer'],
   tagline: 'Building scalable web applications, cross-platform mobile apps, and robust RESTful backends.',
   summary:
-    'Computer Science graduate from FAST-NUCES with hands-on experience building production-grade MERN web applications, cross-platform Flutter mobile apps, and scalable RESTful backends. Proven track record leading mobile development teams during software internships, designing relational databases, and shipping end-to-end features.',
+    'Computer Science graduate from FAST-NUCES with hands-on experience building production-grade MERN web applications, cross-platform Flutter mobile apps, and scalable RESTful backends. Proven track record across 2 software engineering internships (including Mobile Development Project Lead), designing relational databases, and shipping end-to-end features.',
   location: 'Lahore, Pakistan',
   email: 'rafeysaleem66@gmail.com',
   phone: '+92 333 7463316',
@@ -18,7 +18,7 @@ export const personal = {
     { label: 'GitHub Repos', value: '20+' },
     { label: 'Tech Stacks', value: '5+' },
     { label: 'Years CS', value: '4' },
-    { label: 'Internship', value: '1' },
+    { label: 'Internships', value: '2' },
   ],
 }
 
