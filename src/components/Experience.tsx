@@ -1,11 +1,18 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Briefcase, Calendar, MapPin, CheckCircle2 } from 'lucide-react'
+import { Briefcase, Calendar, MapPin, CheckCircle2, FolderGit2, ExternalLink } from 'lucide-react'
 import { experiences } from '../data/portfolio'
 
 export default function Experience() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+
+  const scrollToProjects = (projectId: string) => {
+    const el = document.getElementById('projects')
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <section id="experience" ref={ref} className="relative bg-slate-950">
@@ -69,6 +76,28 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
+
+                {/* Related Projects Link */}
+                {exp.relatedProjects && exp.relatedProjects.length > 0 && (
+                  <div className="mb-5 p-3 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center flex-wrap gap-2 text-xs sm:text-sm">
+                    <span className="font-semibold text-slate-300 flex items-center gap-1.5">
+                      <FolderGit2 size={14} className="text-violet-400" />
+                      Projects:
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.relatedProjects.map(p => (
+                        <button
+                          key={p.id}
+                          onClick={() => scrollToProjects(p.id)}
+                          className="inline-flex items-center gap-1 font-medium text-violet-300 hover:text-white bg-violet-600/20 hover:bg-violet-600/40 border border-violet-500/30 px-2.5 py-1 rounded-lg transition-colors"
+                        >
+                          {p.title}
+                          <ExternalLink size={12} />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {exp.tech.map(t => (

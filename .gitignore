@@ -38,3 +38,6 @@ Thumbs.db
 /out/
 /build
 next-env.d.ts
+
+# Large demo video files (serve locally, not committed to git)
+public/videos/*.mp4

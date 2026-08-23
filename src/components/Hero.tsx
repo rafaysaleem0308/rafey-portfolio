@@ -202,7 +202,7 @@ export default function Hero() {
                 ls projects/
               </Line>
               <Line delay={2.1} color="text-cyan-400">
-                18 projects found ✓
+                20 projects found ✓
               </Line>
               <Line delay={2.3} color="text-green-400" prefix="$">
                 status

@@ -10,9 +10,14 @@ export interface Project {
   stars: number
   featured: boolean
   highlights?: string[]
+  architectureHighlights?: string[]
+  internshipLabel?: string
+  internshipRole?: string
+  demoVideoUrl?: string
+  hideGithub?: boolean
 }
 
-export type ProjectCategory = 'Full-Stack' | 'AI/ML' | 'Mobile' | 'Algorithms' | 'Systems' | 'Web'
+export type ProjectCategory = 'Full-Stack' | 'MERN' | 'Mobile' | 'AI/ML' | 'Algorithms' | 'Systems' | 'Web'
 
 export interface Skill {
   name: string
@@ -35,6 +40,7 @@ export interface Experience {
   type: string
   description: string[]
   tech: string[]
+  relatedProjects?: { id: string; title: string }[]
 }
 
 export interface Education {
