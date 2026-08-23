@@ -510,7 +510,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 'nextbridge',
-    role: 'Trainee Software Engineer Intern',
+    role: 'Associate Software Internee',
     company: 'Nextbridge Ltd.',
     location: 'Lahore, Pakistan',
     period: 'Jun 2025 – Jul 2025',

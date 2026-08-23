@@ -132,7 +132,7 @@ export default function About() {
                 I'm a Computer Science graduate from <span className="text-violet-400 font-medium">FAST-NUCES</span> with a solid foundation in software engineering principles, Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), and database architecture.
               </p>
               <p>
-                Through internships at <span className="text-violet-400 font-medium">TefTeq Software</span> (as Mobile Development Project Lead for MotorHub and PawCare) and <span className="text-violet-400 font-medium">Nextbridge Ltd.</span>, I've gained practical experience designing RESTful APIs, building cross-platform Flutter applications, and shipping production-ready MERN stack features.
+                Through software internships at <span className="text-violet-400 font-medium">TefTeq Software</span> (as Mobile Development Project Lead) and <span className="text-violet-400 font-medium">Nextbridge Ltd.</span> (as Associate Software Internee), I've gained practical experience designing RESTful APIs, building cross-platform Flutter applications, and shipping production-ready MERN stack features.
               </p>
             </motion.div>
           </div>
