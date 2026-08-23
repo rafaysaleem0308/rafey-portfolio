@@ -46,7 +46,7 @@ export const projects: Project[] = [
     featured: true,
     internshipLabel: 'TefTeq Software — Internship Project',
     internshipRole: 'Mobile Development Project Lead',
-    demoVideoUrl: '/videos/motorhub-demo.mp4',
+    demoVideoUrl: 'https://res.cloudinary.com/yzk3kcga/video/upload/v1787507857/motorhub-demo.mp4',
     hideGithub: true,
     highlights: [
       'Multi-role access control (Customers, Service Providers, Super Admin)',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     featured: true,
     internshipLabel: 'TefTeq Software — Internship Project',
     internshipRole: 'Mobile Development Project Lead',
-    demoVideoUrl: '/videos/pawcare-demo.mp4',
+    demoVideoUrl: 'https://res.cloudinary.com/yzk3kcga/video/upload/v1787507453/pawcare-demo.mp4',
     hideGithub: true,
     highlights: [
       'Cross-platform Flutter mobile UI with offline-first local cache',
