@@ -548,7 +548,7 @@ export const leadershipRoles: LeadershipRole[] = [
     id: 'president',
     role: 'President',
     organization: 'FAST E-Gaming Society — FAST-NUCES CFD',
-    period: '2025 – Present',
+    period: '2025 – 2026',
     description: 'Leading the university e-gaming society, organizing tournaments, managing a team of officers, and growing the community across campus.',
   },
   {
