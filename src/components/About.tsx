@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { MapPin, Code2, Brain, Rocket, Users } from 'lucide-react'
+import { MapPin, Code2, Server, Rocket, Users } from 'lucide-react'
 import { personal } from '../data/portfolio'
 
 const fadeUp = {
@@ -9,10 +9,10 @@ const fadeUp = {
 }
 
 const highlights = [
-  { icon: Code2, label: 'Full-Stack Dev', desc: 'MERN stack production apps' },
-  { icon: Brain, label: 'AI/ML Engineer', desc: 'PyTorch, spaCy, scikit-learn' },
-  { icon: Rocket, label: 'Mobile Dev', desc: 'Cross-platform Flutter apps' },
-  { icon: Users, label: 'Team Leader', desc: 'President of E-Gaming Society' },
+  { icon: Code2, label: 'Full-Stack Web', desc: 'MERN stack & responsive UI/UX' },
+  { icon: Server, label: 'Backend & APIs', desc: 'Node.js, Express, PostgreSQL, REST' },
+  { icon: Rocket, label: 'Mobile Engineering', desc: 'Cross-platform Flutter apps' },
+  { icon: Users, label: 'Team Leadership', desc: 'Mobile Lead & Society President' },
 ]
 
 export default function About() {
@@ -31,8 +31,8 @@ export default function About() {
             About Me
           </motion.p>
           <motion.h2 custom={1} variants={fadeUp} className="section-title">
-            Turning ideas into{' '}
-            <span className="gradient-text">real products</span>
+            Engineering scalable{' '}
+            <span className="gradient-text">web & mobile products</span>
           </motion.h2>
           <motion.p custom={2} variants={fadeUp} className="section-subtitle max-w-2xl mx-auto">
             {personal.summary}
@@ -56,12 +56,14 @@ export default function About() {
                   onError={e => {
                     const el = e.currentTarget
                     el.style.display = 'none'
-                    el.parentElement!.innerHTML = `<div class="w-full h-full rounded-[22px] bg-slate-800 flex items-center justify-center text-6xl font-bold text-violet-400">RS</div>`
+                    if (el.parentElement) {
+                      el.parentElement.innerHTML = `<div class="w-full h-full rounded-[22px] bg-slate-800 flex items-center justify-center text-6xl font-bold text-violet-400">RS</div>`
+                    }
                   }}
                 />
               </div>
               <div className="absolute -bottom-3 -right-3 bg-violet-600 rounded-2xl px-3 py-1.5 text-xs font-bold text-white shadow-lg">
-                FYP 🎓
+                FAST-NUCES 🎓
               </div>
             </div>
 
@@ -73,7 +75,7 @@ export default function About() {
                 {personal.location}
               </div>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start pt-2">
-                {['MERN Stack', 'Flutter', 'AI/ML', 'CS Graduate'].map(tag => (
+                {['Full-Stack', 'MERN Stack', 'Flutter', 'REST APIs', 'PostgreSQL / Mongo'].map(tag => (
                   <span key={tag} className="badge bg-violet-500/10 text-violet-300 border border-violet-500/20">
                     {tag}
                   </span>
@@ -127,15 +129,10 @@ export default function About() {
               className="card p-6 space-y-3 text-slate-400 text-sm leading-relaxed"
             >
               <p>
-                I'm a Computer Science graduate from <span className="text-violet-400 font-medium">FAST-NUCES</span>, passionate
-                about building software that solves real problems. My journey started with C++ and DSA, evolved through
-                the MERN stack and Flutter, and now extends into AI/ML with PyTorch and NLP.
+                I'm a Computer Science graduate from <span className="text-violet-400 font-medium">FAST-NUCES</span> with a solid foundation in software engineering principles, Data Structures &amp; Algorithms (DSA), Object-Oriented Programming (OOP), and database architecture.
               </p>
               <p>
-                My <span className="text-slate-100 font-medium">FYP — IndieLife</span> — was a multi-service
-                Flutter app with an AI-powered budget planner, backed by a Node.js API and a Python/Flask microservice. I've
-                also interned at <span className="text-violet-400 font-medium">Nextbridge Ltd.</span> contributing to 3+
-                production modules.
+                Through internships at <span className="text-violet-400 font-medium">TefTeq Software</span> (as Mobile Development Project Lead for MotorHub and PawCare) and <span className="text-violet-400 font-medium">Nextbridge Ltd.</span>, I've gained practical experience designing RESTful APIs, building cross-platform Flutter applications, and shipping production-ready MERN stack features.
               </p>
             </motion.div>
           </div>

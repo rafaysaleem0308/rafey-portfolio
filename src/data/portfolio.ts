@@ -3,10 +3,10 @@ import type { Project, SkillCategory, Experience, Education, LeadershipRole, Nav
 export const personal = {
   name: 'Rafey Saleem',
   title: 'Full-Stack Developer',
-  roles: ['Full-Stack Developer', 'MERN Developer', 'AI/ML Engineer', 'Flutter Developer'],
-  tagline: 'Building scalable, user-facing products — from MERN backends to Flutter apps and AI-driven features.',
+  roles: ['Full-Stack Developer', 'MERN Developer', 'Flutter Developer', 'Software Engineer'],
+  tagline: 'Building scalable web applications, cross-platform mobile apps, and robust RESTful backends.',
   summary:
-    'Computer Science graduate from FAST-NUCES with hands-on experience shipping production-grade MERN applications and cross-platform Flutter apps. Built and deployed multi-service systems spanning REST APIs, AI-driven features, and admin dashboards. Strong foundation in DSA, OOP, and agile collaboration via Git/GitHub.',
+    'Computer Science graduate from FAST-NUCES with hands-on experience building production-grade MERN web applications, cross-platform Flutter mobile apps, and scalable RESTful backends. Proven track record leading mobile development teams during software internships, designing relational databases, and shipping end-to-end features.',
   location: 'Lahore, Pakistan',
   email: 'rafeysaleem66@gmail.com',
   phone: '+92 333 7463316',
