@@ -491,8 +491,8 @@ export const experiences: Experience[] = [
     id: 'tefteq',
     role: 'Software Development Intern / Mobile Development Project Lead',
     company: 'TefTeq Software',
-    location: 'Lahore, Pakistan',
-    period: 'Jul 2025 – Present',
+    location: 'Remote',
+    period: 'Jun 2026 – Aug 2026',
     type: 'Internship & Leadership',
     description: [
       'Led the Mobile Development team for MotorHub and PawCare company projects, coordinating tasks and sprint goals.',
