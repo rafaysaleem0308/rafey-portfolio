@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react'
 import { personal } from '../data/portfolio'
 
-const ROLES = ['Full-Stack Developer', 'MERN Developer', 'AI/ML Engineer', 'Flutter Developer']
+const ROLES = ['Full-Stack Developer', 'MERN Developer', 'Flutter Developer', 'Software Engineer']
 
 function useTypewriter(words: string[]) {
   const [displayed, setDisplayed] = useState('')
@@ -29,7 +29,7 @@ function useTypewriter(words: string[]) {
   return displayed
 }
 
-const TECH_STACK = ['React', 'Node.js', 'Flutter', 'MongoDB', 'Python', 'Express', 'PyTorch', 'Flask']
+const TECH_STACK = ['React', 'Node.js', 'Flutter', 'PostgreSQL', 'MongoDB', 'Docker', 'Express', 'Python']
 
 export default function Hero() {
   const role = useTypewriter(ROLES)
@@ -224,7 +224,7 @@ export default function Hero() {
 
           {/* Floating tech badges */}
           <div className="mt-4 grid grid-cols-4 gap-2">
-            {['MERN', 'Flutter', 'PyTorch', 'REST API', 'spaCy', 'MongoDB', 'Flask', 'Agile'].map((tag, i) => (
+            {['MERN', 'Flutter', 'PostgreSQL', 'Docker', 'REST APIs', 'MongoDB', 'Node.js', 'Agile'].map((tag, i) => (
               <motion.div
                 key={tag}
                 initial={{ opacity: 0, y: 10 }}
